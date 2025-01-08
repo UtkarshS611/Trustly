@@ -8,7 +8,7 @@ import Features from './components/Features'
 const Home = () => {
   return (
     <div className='text-white/85'>
-      <main className='max-h-screen overflow-hidden'>
+      <main>
         <Navbar/>
         <Hero/>
       </main>
