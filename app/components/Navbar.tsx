@@ -21,7 +21,6 @@ const Navbar = () => {
           Trustly
         </div>
         <div>
-          {/* <button className='bg-white/10 py-2 px-4 rounded-full flex items-center gap-1 shadow'>Login / Register</button> */}
           <div className="bg-white/10 py-2 px-4 rounded-full flex items-center gap-2 shadow cursor-pointer">
             <div className="bg-[#3BD6FF] h-2 w-2 rounded-full" />
             <SignedOut>

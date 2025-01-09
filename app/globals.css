@@ -19,11 +19,27 @@ body {
   box-shadow: inset 1px 4px 5px 0px rgba(255, 255, 255, 0.2);
 }
 
-
-*::selection{
+*::selection {
   background-color: #3bd5ff67;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.test {
+  ::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    /* height: 12px; */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Thumb (scrollbar handle) */
+  ::-webkit-scrollbar-thumb {
+    background: #3BD6FF;
+  }
 }
