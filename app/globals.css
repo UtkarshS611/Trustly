@@ -19,6 +19,11 @@ body {
   box-shadow: inset 1px 4px 5px 0px rgba(255, 255, 255, 0.2);
 }
 
+
 *::selection{
   background-color: #3bd5ff67;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
