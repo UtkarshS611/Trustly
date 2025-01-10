@@ -8,24 +8,14 @@ import {
   const Faqs = () => {
     const faqs = [
       {
-        question: "What is a FAQ?",
+        question: "What is a Trustly?",
         answer:
-          "A FAQ is a list of frequently asked questions and answers on a particular topic.",
+          "Trustly is a platform built especially for job and internship seekers to find out about a job posting whether it's genuine post or a dummy role to scam people.",
       },
       {
-        question: "What is the purpose of a FAQ?",
+        question: "What is the purpose of Trustly?",
         answer:
-          "The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.",
-      },
-      {
-        question: "How do I create a FAQ?",
-        answer:
-          "To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.",
-      },
-      {
-        question: "What are the benefits of a FAQ?",
-        answer:
-          "The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.",
+          "The purpose of a Trustly is to provide a platform for job seekers to find out about a job posting whether it's genuine post or a dummy role to scam people.",
       },
     ];
   

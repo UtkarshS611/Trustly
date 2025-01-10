@@ -2,27 +2,19 @@ import Image from "next/image";
 
 const webinars = [
   {
-    id: "webinar-1",
-    subtitle: "Employer of record",
-    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    id: "Company background analysis",
+    subtitle: "Employer records",
+    title: "Company background analysis",
     description:
-      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
-    label: "Ut varius dolor turpis",
-    author: "Jane Doe",
-    published: "1 Jan 2024",
-    href: "#",
+      "Quickly analyze the background of a company to determine if it is a genuine company or not. This feature is useful for job seekers and investors.",
     image: "/Security.svg",
   },
   {
-    id: "webinar-2",
-    subtitle: "Employer of record",
-    title: "Duis sem sem, gravida vel porttitor eu, volutpat ut arcu",
+    id: "Founder contact",
+    subtitle: "Records",
+    title: "Founder contact",
     description:
-      "Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.",
-    label: "Ut varius dolor turpis",
-    author: "Jane Doe",
-    published: "1 Jan 2024",
-    href: "#",
+      "Get the contact details of the founder of a company. This feature is useful for job seekers and investors to know if its an actual job posting or just a scam for getting free work done.",
     image: "/Job.svg",
   },
 ];
@@ -50,8 +42,7 @@ const Features = () => {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold md:text-2xl lg:text-3xl">
-                  Engaging Talent, Embracing Change: Uncover the Value of an
-                  Employer of Record
+                  {webinar.description}
                 </h3>
                 <div className="mt-4 flex items-center space-x-2 md:mt-5">
                   <span className="font-semibold md:text-base">Read more</span>
