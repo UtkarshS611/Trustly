@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { Data } from "./data";
 
 const About = () => {
   const [searched, setSearcher] = React.useState(false);

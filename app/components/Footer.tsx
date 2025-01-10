@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const sections = [
   {
     title: "Product",
@@ -45,10 +47,11 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
             <div className="col-span-2 mb-8 lg:mb-0">
               <div className="flex items-center gap-1">
-              <img
+              <Image
                 src="/logo.svg"
                 alt="logo"
-                className="mb-4 h-7"
+                width={30}
+                height={30}
               />
               Truslty
               </div>
