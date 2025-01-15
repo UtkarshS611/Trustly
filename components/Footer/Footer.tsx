@@ -1,5 +1,7 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
+import Image from "next/image";
+
 const sections = [
   {
     title: "Product",
@@ -39,16 +41,17 @@ const Footer = () => {
             <div className="flex w-full max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
               <div>
                 <span className="flex items-center justify-center gap-4 lg:justify-start">
-                  <img
-                    src="https://shadcnblocks.com/images/block/block-1.svg"
+                  <Image
+                    src="/Logo.svg"
                     alt="logo"
+                    width={44}
+                    height={44}
                     className="h-11"
                   />
-                  <p className="text-3xl font-semibold">Shadcnblocks</p>
+                  <p className="text-3xl font-semibold">Trustly</p>
                 </span>
                 <p className="mt-6 text-sm text-muted-foreground">
-                  A collection of 100+ responsive HTML templates for your
-                  startup business or side project.
+                  Empowering job seekers with trust scores and ensuring a secure job search experience.
                 </p>
               </div>
               <ul className="flex items-center space-x-6 text-muted-foreground">
@@ -93,7 +96,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-20 flex flex-col justify-between gap-4 border-t pt-8 text-center text-sm font-medium text-muted-foreground lg:flex-row lg:items-center lg:text-left">
-            <p>© 2024 Shadcnblocks. All rights reserved.</p>
+            <p>© 2025 Trustly. All rights reserved.</p>
             <ul className="flex justify-center gap-4 lg:justify-start">
               <li className="hover:text-primary">
                 <a href="#"> Terms and Conditions</a>

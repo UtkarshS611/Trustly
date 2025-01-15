@@ -26,6 +26,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ModeToggle } from "../ModeToggle/ModeToggle";
+import Image from "next/image";
+import Link from "next/link";
 
 const subMenuItemsOne = [
   {
@@ -81,8 +83,14 @@ const Navbar1 = () => {
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <img src="https://shadcnblocks.com/images/block/block-1.svg" className="w-8" alt="logo" />
-              <span className="text-xl font-bold">Shadcn Blocks</span>
+              <Image
+                src="/Logo.svg"
+                width={44}
+                height={44}
+                className="w-8"
+                alt="logo"
+              />
+              <span className="text-xl font-bold">Trustly</span>
             </div>
             <div className="flex items-center">
               <a
@@ -91,7 +99,7 @@ const Navbar1 = () => {
                   navigationMenuTriggerStyle,
                   buttonVariants({
                     variant: "ghost",
-                  }),
+                  })
                 )}
                 href="#"
               >
@@ -110,7 +118,7 @@ const Navbar1 = () => {
                             <li key={idx}>
                               <span
                                 className={cn(
-                                  "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors cursor-pointer hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                                  "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors cursor-pointer hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                                 )}
                               >
                                 {item.icon}
@@ -138,7 +146,7 @@ const Navbar1 = () => {
                             <li key={idx}>
                               <span
                                 className={cn(
-                                  "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors cursor-pointer hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                                  "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors cursor-pointer hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                                 )}
                               >
                                 {item.icon}
@@ -159,43 +167,26 @@ const Navbar1 = () => {
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
-
-              <a
-                className={cn(
-                  "text-muted-foreground",
-                  navigationMenuTriggerStyle,
-                  buttonVariants({
-                    variant: "ghost",
-                  }),
-                )}
-                href="#"
-              >
-                Pricing
-              </a>
-              <a
-                className={cn(
-                  "text-muted-foreground",
-                  navigationMenuTriggerStyle,
-                  buttonVariants({
-                    variant: "ghost",
-                  }),
-                )}
-                href="#"
-              >
-                Blog
-              </a>
             </div>
           </div>
           <div className="flex gap-2">
-            <Button variant="outline">Log in</Button>
-            <Button>Sign up</Button>
-            <ModeToggle/>
+            <Link href={"/sign-in"}>
+              <Button variant="outline">Log in</Button>
+            </Link>
+            <Link href={"/sign-up"}>
+              <Button>Sign up</Button>
+            </Link>
+            <ModeToggle />
           </div>
         </nav>
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <img src="https://shadcnblocks.com/images/block/block-1.svg" className="w-8" alt="logo" />
+              <img
+                src="https://shadcnblocks.com/images/block/block-1.svg"
+                className="w-8"
+                alt="logo"
+              />
               <span className="text-xl font-bold">Shadcn Blocks</span>
             </div>
             <Sheet>
@@ -231,7 +222,7 @@ const Navbar1 = () => {
                           <span
                             key={idx}
                             className={cn(
-                              "flex select-none gap-4 rounded-md p-3 leading-none outline-none transition-colors hover:bg-accent cursor-pointer hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                              "flex select-none gap-4 rounded-md p-3 leading-none outline-none transition-colors hover:bg-accent cursor-pointer hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             )}
                           >
                             {item.icon}
@@ -256,7 +247,7 @@ const Navbar1 = () => {
                           <span
                             key={idx}
                             className={cn(
-                              "flex select-none gap-4 rounded-md p-3 leading-none outline-none transition-colors hover:bg-accent cursor-pointer hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                              "flex select-none gap-4 rounded-md p-3 leading-none outline-none transition-colors hover:bg-accent cursor-pointer hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             )}
                           >
                             {item.icon}
@@ -284,7 +275,7 @@ const Navbar1 = () => {
                   <div className="mt-2 flex flex-col gap-3">
                     <Button variant="outline">Log in</Button>
                     <Button>Sign up</Button>
-                    <ModeToggle/>
+                    <ModeToggle />
                   </div>
                 </div>
               </SheetContent>
