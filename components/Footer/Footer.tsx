@@ -42,7 +42,7 @@ const Footer = () => {
               <div>
                 <span className="flex items-center justify-center gap-4 lg:justify-start">
                   <Image
-                    src="/Logo.svg"
+                    src="logo.svg"
                     alt="logo"
                     width={44}
                     height={44}

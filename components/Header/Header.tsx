@@ -84,7 +84,7 @@ const Navbar1 = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Image
-                src="/Logo.svg"
+                src="logo.svg"
                 width={44}
                 height={44}
                 className="w-8"
@@ -185,7 +185,7 @@ const Navbar1 = () => {
               <Image
                 width={44}
                 height={44}
-                src="/Logo.svg"
+                src="logo.svg"
                 className="w-8"
                 alt="logo"
               />
@@ -201,12 +201,14 @@ const Navbar1 = () => {
                 <SheetHeader>
                   <SheetTitle>
                     <div className="flex items-center gap-2">
-                      <img
-                        src="https://shadcnblocks.com/images/block/block-1.svg"
+                      <Image
+                        width={44}
+                        height={44}
+                        src="logo.svg"
                         className="w-8"
                         alt="logo"
                       />
-                      <span className="text-xl font-bold">Shadcn Blocks</span>
+                      <span className="text-xl font-bold">Trustly</span>
                     </div>
                   </SheetTitle>
                 </SheetHeader>
