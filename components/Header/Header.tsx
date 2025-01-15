@@ -182,12 +182,14 @@ const Navbar1 = () => {
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <img
-                src="https://shadcnblocks.com/images/block/block-1.svg"
+              <Image
+                width={44}
+                height={44}
+                src="/Logo.svg"
                 className="w-8"
                 alt="logo"
               />
-              <span className="text-xl font-bold">Shadcn Blocks</span>
+              <span className="text-xl font-bold">Trustly</span>
             </div>
             <Sheet>
               <SheetTrigger asChild>
