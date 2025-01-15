@@ -1,25 +1,19 @@
+import About from '@/components/About/About'
+import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
+import Hero from '@/components/Hero/Hero'
 import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Faqs from './components/Faqs'
-import Footer from './components/Footer'
-import Features from './components/Features'
-import Gradient from './components/Gradient'
-import ScrollToTop from './components/ScrollToTop'
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <div className='text-white/85'>
-      <ScrollToTop/>
-      <Gradient/>
+    <>
+      <Header/>
       <main>
-        <Navbar/>
         <Hero/>
+        <About/>
+        <Footer/>
       </main>
-      <Features/>
-      <Faqs/>
-      <Footer/>
-    </div>
+    </>
   )
 }
 
