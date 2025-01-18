@@ -1,4 +1,5 @@
 import { CircleArrowRight, Files, Settings } from "lucide-react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -10,7 +11,9 @@ const About = () => {
           </h1>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          <img
+          <Image
+            height={400}
+            width={600}
             src="https://shadcnblocks.com/images/block/placeholder-1.svg"
             alt="placeholder"
             className="size-full max-h-96 rounded-2xl object-cover"
@@ -18,7 +21,9 @@ const About = () => {
           <div className="flex flex-col justify-between gap-10 rounded-2xl bg-muted p-10">
             <p className="text-sm text-muted-foreground">OUR MISSION</p>
             <p className="text-lg font-medium">
-              Making students and job seekers life easier by providing them with a platform that uncovers fake job postings, empowering job seekers with trust scores and ensuring a secure job search experience.
+              Making students and job seekers life easier by providing them with
+              a platform that uncovers fake job postings, empowering job seekers
+              with trust scores and ensuring a secure job search experience.
             </p>
           </div>
         </div>

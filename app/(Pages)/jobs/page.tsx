@@ -11,7 +11,7 @@ interface Message {
   isBot: boolean;
 }
 
-const page = () => {
+const Page = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
@@ -83,4 +83,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
