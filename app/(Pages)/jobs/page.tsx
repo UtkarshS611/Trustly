@@ -15,7 +15,7 @@ const Page = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hello! I'm your personal health assistant. How can I help you today?",
+      text: "Hello! How can I help you today?",
       isBot: true,
     },
   ]);
